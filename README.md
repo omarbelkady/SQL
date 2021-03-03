@@ -2,7 +2,7 @@
 
 #### DATA TYPES IN PSQL
 - bigint
-- bigserial
+- bigserial(integer which autoincrements)
 - bit [n]
 - bit varying [ (n) ]
 - boolean
@@ -104,11 +104,21 @@ INSERT INTO fortran32(first_name, last_name, loves_cobol, day_he_discovered_ftn,
 VaLUES("42932", "765262632", `TRUE`, DATE `2016-08-08`, `chensung56837@gmail.com`);
 ```
 
+#### How To Insert Records in Table Data Insert Into
+```sql
+INSERT INTO fortran32(first_name, last_name, loves_cobol, day_he_discovered_ftn)
+VaLUES("Nelan", "Pascalfb", `TRUE`, DATE `2016-08-08`);
+```
+
 
 #### Sorting Data
 ```sql
 SELECT * from fortran32 ORDER BY first_name ASC;
 ```
+
+## Primary Keys
+- A Column in the Table which uniquely identifies the a record in our table
+
 
 
 ## Operators
@@ -132,6 +142,7 @@ SELECT * from fortran32 OFFSET 5;
 ```sql
 \l
 ```
+
 
 ### How To Create A Database(PREFERRED)
 ```sql
