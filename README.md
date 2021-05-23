@@ -1,21 +1,15 @@
 ### POSTGRES+SQL FUNDAMENTALS ... SU 63526
 
 #### DATA TYPES IN PSQL
-- bigint
+
 - bigserial(integer which autoincrements)
 - bit [n]
 - bit varying [ (n) ]
 - boolean
 - box
-- bytea
-- character [ (n) ]
-- character varying [ (n) ]
 - cidr
 - circle
-- date
-- double precision
 - inet
-- integer
 - interval [ fields ] [ (p) ]
 - json
 - jsonb
@@ -24,23 +18,70 @@
 - macaddr
 - macaddr8
 - money
-- numeric [ (p,s) ]
+
 - path
 - pg_len
 - point
 - polygon
-- real
-- smallint
+
 - smallserial
 - serial
 - text
-- time
-- timestamp
+
 - tsquery
 - tsvector
 - txid_snapshot
 - uid
 - xml
+
+### Numeric Data Types:
+
+- bit
+- tinyint
+- bool
+- boolean
+- smallint
+- mediumint
+- int
+- integer
+- bigint
+- float
+- numeric [ (p,s) ]
+- double
+- double precision
+- decimal
+- dec
+
+
+### DATE/TIME Data Types:
+
+- datetime
+- date
+- time
+- timestamp
+- year
+
+
+### BINARY Data Types:
+
+- binary
+- varbinary
+- varbinary(max)
+- year
+
+
+### String Data Types:
+
+- CHAR
+- varchar
+- binary: argument is the column length
+- varbinary: same as varchar but stores byte strings
+- text(n): holds a string of length n 
+- numeric [ (p,s) ]
+- float
+- real
+
+
 
 
 #### How To Create A Table
