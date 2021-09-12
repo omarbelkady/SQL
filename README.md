@@ -151,6 +151,40 @@ INSERT INTO fortran32(first_name, last_name, loves_cobol, day_he_discovered_ftn)
 VaLUES("Nelan", "Pascalfb", `TRUE`, DATE `2016-08-08`);
 ```
 
+#### Selecting All Columns in My DB Table
+```sql
+SELECT * from mytable
+```
+
+#### Selecting Fname and City Columns in My DB
+```sql
+SELECT Fname,City from mytable
+```
+
+
+### My Table
+
+| ClientId |  ClientUsername | ClientName | Address |City|Zip Code|Country|
+|--------|--------|----------|----------|----------|----------|----------|
+|1   |marjones2|Maria Jones|801 W 27th St|Dallas|78172|USA
+|2   |andrewb1|Andrew Baker|922E Howard Lane|PflugervilleTX|78660|USA
+|3   |mikesmith007|Michael Smith|Potsdamer Platz Str. 7|Berlin|10785 |Germany|
+|4   |joedwards777|Joey Edwards|Spandauer Str. 2|Berlin|10178 |Germany|
+|5   |roberto88|Roberto Lane|14 E 69th St  |New York, NY| 10021|USA|  
+|6   |marianamarufo|Mariana Marufo| 279 E 15th St |Austin,TX|78778 |USA|
+
+
+#### Update The Data
+```sql
+UPDATE Clients
+SET ClientName = 'Mariana Perez', City= 'Brooklyn,NY'
+WHERE ClientId = 6;
+```
+
+#### Deleting A User From The Table
+```sql
+DELETE FROM Client WHERE ClientName='Mariana Marufo';
+```
 
 #### Sorting Data
 ```sql
